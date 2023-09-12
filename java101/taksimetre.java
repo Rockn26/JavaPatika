@@ -16,6 +16,7 @@ public class taksimetre {
         // tutarı 0 olarak alırsak ona 10 tl açılış ücreti eklememiz gerekiyor.
         total += open;
 
+        // total 20 den küçükse 20 gelsin değilse total in kendisi gelebilir.
         total = (total<20) ? 20 : total;
 
         System.out.println("Ödeyeceğiniz tutar : " + total + " Tl");

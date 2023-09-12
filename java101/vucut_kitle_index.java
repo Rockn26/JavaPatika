@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class vucut_kitle_index {
     public static void main(String[] args) {
-        double kilo, boy;
-        double index;
+        double kilo, boy, index;
+
 
         Scanner inp = new Scanner(System.in);
 
@@ -14,7 +14,7 @@ public class vucut_kitle_index {
         System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
         boy = inp.nextDouble();
 
-        // vücut kitle indexi = kilo(kg)/boy(m)*boy(m)
+        // vücut kitle indexi = kilo(kg)/boy(m)*boy(m).
         index = kilo / (boy*boy);
 
         System.out.println("Vücut kitle indeksiniz : " + index);
