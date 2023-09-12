@@ -33,7 +33,7 @@ public class manav_programi {
         total += (muzK * muz);
         total += (patlK * patlican);
 
-        System.out.println("Total : " + total);
+        System.out.println("Toplam Tutar : " + total + " Tl");
 
 
 
