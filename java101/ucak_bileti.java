@@ -29,7 +29,7 @@ public class ucak_bileti {
                 ageDiscount = 0.3;
             }
 
-            
+
             total -= total*ageDiscount;
 
             if (tripType == 2) {
