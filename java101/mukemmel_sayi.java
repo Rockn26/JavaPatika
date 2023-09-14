@@ -24,9 +24,9 @@ public class mukemmel_sayi {
         }
 
         if (total == n) {
-            System.out.println(total + " Mükkemmel sayıdır.");
+            System.out.println(total + " Mükemmel sayıdır.");
         } else {
-            System.out.println(total + " Mükkemmel sayı değildir.");
+            System.out.println(total + " Mükemmel sayı değildir.");
         }
 
 
