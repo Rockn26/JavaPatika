@@ -5,16 +5,18 @@ public class tip_donusumleri {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
 
-        double sayiDouble = 10.6;
-        int sayiInt = (int)sayiDouble;
 
-        int sayi2 = 8;
-        double sayiDouble2 = sayi2;
+        System.out.print("Integer bir değer giriniz : ");
+        int sayiInt = inp.nextInt();
 
-        System.out.println(sayiDouble);
-        System.out.println(sayiInt);
-        System.out.println("----------------");
-        System.out.println(sayi2);
-        System.out.println(sayiDouble2);
+        System.out.print("Double bir değer giriniz : ");
+        double sayiDouble = inp.nextDouble();
+
+        double tip1 = sayiInt;
+        int tip2 = (int) sayiDouble;
+
+        System.out.println(tip1);
+        System.out.println(tip2);
+
     }
 }
