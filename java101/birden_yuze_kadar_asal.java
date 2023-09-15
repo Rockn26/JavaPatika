@@ -19,6 +19,8 @@ public class birden_yuze_kadar_asal {
                 }
             }
 
+
+            
             // asal sayılar yalnızca kendisi ve 1 e bölünürler o yüzden bölen sayısı 2 den az olmalıdır
             if (n < 2) {
                 System.out.print(" " + i);
