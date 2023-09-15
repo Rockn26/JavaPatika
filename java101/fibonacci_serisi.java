@@ -14,7 +14,7 @@ public class fibonacci_serisi {
         int n2 = 1;
         int toplam ;
         System.out.print(n + " elemanlı fibo serisi : ");
-        // 0 1 1 2 3 5 8 13 21 34..  
+        // 0 1 1 2 3 5 8 13 21 34..
         for (int i = 1; i <= n; i++) {  // int girişi kadar döndürdük.
             System.out.print(n1 + " ");
             toplam = n1 + n2;
