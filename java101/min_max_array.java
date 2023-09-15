@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class min_max_array {
     public static void main(String[] args) {
+
+
         int n;
         Scanner inp = new Scanner(System.in);
         System.out.print("Kaç tane sayı gireceksiniz : ");
