@@ -4,18 +4,14 @@ import java.util.Scanner;
 
 public class asal_sayi_recursive {
     static boolean asalMi(int sayi, int bolen) {
-        if (sayi < 2) {
-            return false;
-        }
-        if (bolen == 1) {
-            return true;
-        }
+        System.out.println("Sayı " + sayi);
+        System.out.println("---------------");
+        System.out.println("bolen " + bolen);
+        if (sayi < 2) return false;
+        if (bolen == 1) return true;
+        if (sayi % bolen == 0) return false;
 
-        if (sayi % bolen == 0) {
-            return false;
-        }
         return asalMi(sayi, bolen - 1);
-
 
     }
 
