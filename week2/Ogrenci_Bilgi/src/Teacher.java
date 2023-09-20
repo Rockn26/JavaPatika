@@ -14,7 +14,7 @@ public class Teacher {
     void print() {
         System.out.println("Adı : " + this.name);
         System.out.println("Telefonu : " + this.mpno);
-        System.out.println("Bölümü : " + this.name);
+        System.out.println("Bölümü : " + this.branch);
     }
 
 
