@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Ogrenci_Sinif_Bilgisi.iml" filepath="$PROJECT_DIR$/Ogrenci_Sinif_Bilgisi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ogrenci_Bilgi.iml" filepath="$PROJECT_DIR$/Ogrenci_Bilgi.iml" />
     </modules>
   </component>
 </project>
