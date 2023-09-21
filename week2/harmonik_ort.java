@@ -1,8 +1,8 @@
 package week2;
 
-public class dizideki_eleman_ort {
+public class harmonik_ort {
     public static void main(String[] args) {
-        
+
         int[] numbers = {1,2,3,4,5,6};
 
         /*
