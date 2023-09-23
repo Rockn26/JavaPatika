@@ -1,6 +1,6 @@
 package week2;
 
-public class palindromik_sayi {
+public class palindromik_kelime {
     static boolean isPalindrome(String str){
         int i = 0;
         int j = str.length()-1;
