@@ -1,4 +1,4 @@
-package week2.Ogrenci_Bilgi;
+package week2;
 
 import java.util.Arrays;
 import java.util.Random;
