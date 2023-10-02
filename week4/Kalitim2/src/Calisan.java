@@ -1,4 +1,4 @@
-package week4.Kalitim2.src;
+
 
 public class Calisan {
     private String adSoyad;
@@ -33,5 +33,17 @@ public class Calisan {
 
     public void setEposta(String eposta) {
         this.eposta = eposta;
+    }
+
+    public void giris(){
+        System.out.println(this.getAdSoyad()+ " üniversiteye giriş yaptı !!");
+    }
+
+    public void cikis(){
+        System.out.println(this.getAdSoyad() + " üniversiteden çıkış yaptı ! ");
+    }
+
+    public void yemekhane(){
+        System.out.println(this.getAdSoyad() + " yemekhaneye giriş yaptı ! ");
     }
 }

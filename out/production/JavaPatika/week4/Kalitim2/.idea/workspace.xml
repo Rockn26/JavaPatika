@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d685d525-7efe-4ba7-aabe-012e907c7d23" name="Changes" comment="">
+    <list default="true" id="dcab1709-4aa1-4de7-bb84-a5800c1cb7f6" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kalitim1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +18,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2WDNtFwjYXWO9tj26IZCYsmUbJz" />
+  <component name="ProjectId" id="2WDOURIJZqCjVNi0wW0M4Naol5I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,17 +31,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "/Users/irfananik/Documents/GitHub/JavaPatika/week4/Kalitim1/src/Main.java"
+    "onboarding.tips.debug.path": "/Users/irfananik/Documents/GitHub/JavaPatika/week4/Kalitim2/untitled/src/Main.java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d685d525-7efe-4ba7-aabe-012e907c7d23" name="Changes" comment="" />
-      <created>1696263406144</created>
+      <changelist id="dcab1709-4aa1-4de7-bb84-a5800c1cb7f6" name="Changes" comment="" />
+      <created>1696263701610</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696263406144</updated>
+      <updated>1696263701610</updated>
     </task>
     <servers />
   </component>
