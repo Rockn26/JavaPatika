@@ -1,4 +1,8 @@
-public abstract class Memur extends Calisan{
+package week4.Kalitim2.src;
+
+
+
+public abstract class Memur extends Calisan {
     private String departman;
     private String mesai;
 

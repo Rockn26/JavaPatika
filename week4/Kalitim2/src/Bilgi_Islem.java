@@ -1,3 +1,5 @@
+package week4.Kalitim2.src;
+
 public class Bilgi_Islem extends Memur{
     private String gorev;
 

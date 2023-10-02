@@ -1,3 +1,5 @@
+package week4.Kalitim2.src;
+
 public class OgretimGorevlisi extends Akademisyen{
     private String kapiNo;
 

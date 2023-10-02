@@ -1,3 +1,5 @@
+package week4.Kalitim2.src;
+
 public class Lab_Asistan extends Asistan{
 
     public Lab_Asistan(String adSoyad, String telefon, String eposta, String bolum, String unvan, String ofisSaati) {

@@ -1,4 +1,4 @@
-
+package week4.Kalitim2.src;
 
 public abstract class Calisan {
     private String adSoyad;

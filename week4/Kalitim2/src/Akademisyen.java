@@ -1,3 +1,5 @@
+package week4.Kalitim2.src;
+
 public abstract class Akademisyen extends Calisan{
     private String bolum;
     private String unvan;
