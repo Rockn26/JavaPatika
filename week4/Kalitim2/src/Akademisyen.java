@@ -1,4 +1,4 @@
-public class Akademisyen extends Calisan{
+public abstract class Akademisyen extends Calisan{
     private String bolum;
     private String unvan;
 
@@ -24,7 +24,12 @@ public class Akademisyen extends Calisan{
         this.unvan = unvan;
     }
 
-    public void derseGir(){
-        System.out.println(getAdSoyad() + " derse gir.");
+    public abstract void derseGir(String dersSaati);
+
+    @Override
+    public void giris(){
+        System.out.println(this.getAdSoyad() + " akademisyeni A kapısından giriş yaptı.");
     }
+
+
 }

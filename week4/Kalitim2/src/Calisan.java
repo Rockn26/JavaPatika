@@ -1,6 +1,6 @@
 
 
-public class Calisan {
+public abstract class Calisan {
     private String adSoyad;
     private String telefon;
     private String eposta;
@@ -45,5 +45,11 @@ public class Calisan {
 
     public void yemekhane(){
         System.out.println(this.getAdSoyad() + " yemekhaneye giriş yaptı ! ");
+    }
+
+    public static void girisYapanlar(Calisan[] loginUsers){
+        for (Calisan c : loginUsers){
+            c.giris();
+        }
     }
 }
