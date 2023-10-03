@@ -8,8 +8,12 @@ public class Game {
 
     public void start(){
         System.out.println("Macera oyununa hoşgeldiniz!");
-        System.out.print("Lütfen bir isim giriniz : ");
-        String playerName = inp.nextLine();
+        System.out.println("Lütfen bir isim giriniz : ");
+        //String playerName = inp.nextLine();
+        Player player = new Player("irfan");
+        System.out.println("Sayın " + player.getName() + " bu korkunç adaya hoşgeldiniz! Burada yaşananların hepsi gerçek!");
+        System.out.println("Lütfen bir karakter seçiniz ! ");
+        player.selectChar();
     }
 
 }
