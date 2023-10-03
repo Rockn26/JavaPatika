@@ -9,13 +9,23 @@ public class Player {
     private String name;
     private String charName;
     private Scanner inp = new Scanner(System.in);
+    private Inventory inventory;
 
     public Player(String name) {
         this.name = name;
+        this.inventory = new Inventory();
+    }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
     }
 
     public int getDamage() {
-        return damage;
+        return damage + this.getInventory().getWeapon().getDamage();
     }
 
     public void setDamage(int damage) {
@@ -59,9 +69,9 @@ public class Player {
         Knight knight = new Knight();
         Archer archer = new Archer();
 
-        GameChar[] charlist = {new Samurai(),new Archer(), new Knight()};
+        GameChar[] charlist = {new Samurai(), new Archer(), new Knight()};
         System.out.println("Karakterler");
-        System.out.println("-----------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
         for (GameChar gameChar : charlist) {
             System.out.println("ID : " + gameChar.getId() +
                     "\t Karakter:" + gameChar.getName() +
@@ -69,10 +79,10 @@ public class Player {
                     "\t\t Sağlık : " + gameChar.getHealth() +
                     "\t\t Para : " + gameChar.getMoney());
         }
-        System.out.println("-----------------------------");
-        System.out.println("Lütfen bir karakter seçiniz : ");
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.print("Lütfen bir karakter seçiniz : ");
         int selectChar = inp.nextInt();
-        switch (selectChar){
+        switch (selectChar) {
             case 1:
                 initPlayer(new Samurai());
                 break;
@@ -86,13 +96,26 @@ public class Player {
                 initPlayer(new Samurai());
                 break;
         }
-        System.out.println("Karakter : " + this.getCharName() +
+       /* System.out.println("Karakter : " + this.getCharName() +
                 ", Hasar : " + this.getDamage() +
+                ", Sağlık : " + this.getHealth() +
+                ", Para : " + this.getMoney());
+
+        */
+    }
+
+
+    public void printInfo() {
+        System.out.println("Silah : " + this.getInventory().getWeapon().getName() +
+                ", Zırh : " + this.getInventory().getArmor().getName() +
+                ", Bloklama: " + this.getInventory().getArmor().getBlock() +
+                ", Hasarınız : " + this.getDamage() +
                 ", Sağlık : " + this.getHealth() +
                 ", Para : " + this.getMoney());
     }
 
-    public void initPlayer(GameChar gameChar){
+
+    public void initPlayer(GameChar gameChar) {
         this.setDamage(gameChar.getDamage());
         this.setHealth(gameChar.getHealth());
         this.setMoney(gameChar.getMoney());
