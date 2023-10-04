@@ -1,6 +1,7 @@
 package week4.Macera_Oyunu.src;
 
 import java.util.Scanner;
+import java.util.SortedMap;
 
 public class Game {
 
@@ -22,8 +23,11 @@ public class Game {
             System.out.println("############ Bölgeler ############");
             System.out.println();
             System.out.println("1- Güvenli Ev ---> Burası sizin için güvenli bir ev, düşman yoktur!");
-            System.out.println("2 - Mağaza --> Silah veya Zırh satın alabilirsiniz ! ");
-            System.out.println("0 Çıkış yap --> Oyunu sonlandır.");
+            System.out.println("2- Eşya Dükkanı --> Silah veya Zırh satın alabilirsiniz ! ");
+            System.out.println("3- Mağara --> Ödül <YEMEK>, dikkatli ol canavar çıkabilir!");
+            System.out.println("4- Orman --> Ödül <ODUN>, dikkatli burası mağaradan daha tehlikeli");
+            System.out.println("5- Nehir --> Ödül <Su>, dikkatli ol burası son seviye ! Ayı çıkabilir.");
+            System.out.println("0- Çıkış yap --> Oyunu sonlandır.");
             System.out.println("Lütfen gitmek istediğiniz bölgeyi sseçiniz : ");
             int selectLoc = inp.nextInt();
             switch (selectLoc) {
@@ -36,9 +40,17 @@ public class Game {
                 case 2:
                     location = new ToolStore(player);
                     break;
-                default:
-                    location = new SafeHouse(player);
+                case 3:
+                    location = new Cave(player);
                     break;
+                case 4:
+                    location = new Forest(player);
+                    break;
+                case 5:
+                    location = new River(player);
+                    break;
+                default:
+                    System.out.println("Lütfen geçerli bir bölge giriniz ! ");
             }
 
             if (location == null){
