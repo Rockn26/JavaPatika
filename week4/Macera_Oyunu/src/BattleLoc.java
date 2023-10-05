@@ -77,6 +77,9 @@ public abstract class BattleLoc extends Location {
                 }
             }
 
+
+            // Burada genel ödülleri gösterirken yılanın para ödülünde para 0 oluyordu o yüzden
+            // içine spesifik olarak yılan barındıran koşulu ekleyince doğru para çıktısını aldık.
             if (this.getObstacle().getHealth() < this.getPlayer().getHealth()) {
                 if (this.getName().equals("Maden"))
                     supriseAward();
@@ -91,7 +94,6 @@ public abstract class BattleLoc extends Location {
 
                 }
 
-
             } else {
                 return false;
             }
@@ -99,6 +101,7 @@ public abstract class BattleLoc extends Location {
         return true;
     }
 
+    // ödüllerimizi burada tanımladık.
     public void stringAward() {
         if (this.getAward().equals("food")) {
             this.getPlayer().getInventory().setFood(true);
@@ -111,9 +114,18 @@ public abstract class BattleLoc extends Location {
         }
     }
 
+
+    // burada ödüllerimizin yüzdelerini hesapladık
+    // Genel yüzdeler         // iç yüzdeleri
+    // %15 silah              % 20 tüfek % 30 kılıç % 50 tabanca
+    // %15 zırh               % 20 hafif % 30 orta % 50 ağır
+    // %25 para               % 20 10 coin %30 5 coin %50 1 coin
+    // %56 hiçbir şey kazanamama ihtimali
     public void supriseAward() {
+        // ilk olarak genel yüzdeyi yazdık.
         double suprise = Math.random() * 100;
         if (suprise >= 0 && suprise <= 15) {
+            // silahın yüzdesini hesaplıyoruz
             System.out.println("---Bir silah düştü!---");
             double silahSans = Math.random() * 100;
             if (silahSans >= 0 && silahSans <= 20) {
@@ -128,6 +140,7 @@ public abstract class BattleLoc extends Location {
                 System.out.println("Kazandığınız silah : " + this.getPlayer().getInventory().getWeapon().getName());
             }
         } else if (suprise >= 16 && suprise <= 30) {
+            // geri kalan 15 lik dilimi zırhın yüzdesi olarak hesaplıyoruz
             System.out.println("---Bir zırh düştü!---");
             double zirhSans = Math.random() * 100;
             if (zirhSans >= 0 && zirhSans <= 20) {
@@ -141,7 +154,8 @@ public abstract class BattleLoc extends Location {
                 System.out.println("Kazandığınız zırh : " + this.getPlayer().getInventory().getArmor().getName());
             }
 
-        } else if (suprise >= 31 && suprise <= 55) {
+        } else if (suprise >= 31 && suprise <= 56) {
+            // para yüzdelerini hesaplıyoruz.
             System.out.println("---Para kazandınız---");
             double paraSans = Math.random() * 100;
             if (paraSans >= 0 && paraSans <= 20) {
@@ -155,6 +169,7 @@ public abstract class BattleLoc extends Location {
                 System.out.println("Kazanılan para : 1");
             }
         } else {
+            // en son hiçbir şey kazanamama durumu.
             System.out.println("---ŞANSSIZSIN. HİÇBİR ŞEY DÜŞMEDİ!!---");
         }
     }
@@ -165,6 +180,12 @@ public abstract class BattleLoc extends Location {
         System.out.println("-------");
     }
 
+
+
+    // burada iki durum oluşuyor. ilk biz vuruyorsak ayrı koşul
+    // canavar ilk vuruyorsa ayrı koşul yazıyoruz.
+    // bu koşulları eklerken canların 0 dan büyük olduğunu da hesaba katıyoruz.
+    // en son afterHit diyerek güncel değerlerimizi getiriyoruz
     public void firstAttack() {
         if (randomAttack()) {
             System.out.println("----SİZ VURDUNUZ----!");
@@ -173,6 +194,8 @@ public abstract class BattleLoc extends Location {
             if (this.getObstacle().getHealth() > 0) {
                 System.out.println("----CANAVAR SİZE VURDU----!");
                 int obstacleDamage = this.getObstacle().getDamage() - getPlayer().getInventory().getArmor().getBlock();
+                // alttaki kodlarda aynısı var tek burada açıklıyorum.
+                // eğer canavarımızın canı 0 altına düşerse biz eksi ifadesini görmek istemiyoruz. 0 a eşitledik.
                 if (obstacleDamage < 0) obstacleDamage = 0;
                 this.getPlayer().setHealth(this.getPlayer().getHealth() - obstacleDamage);
                 afterHit();
@@ -194,6 +217,8 @@ public abstract class BattleLoc extends Location {
         }
     }
 
+
+    // burada ilk vuruşun kimin yapacağını math random sınıfıyla hesaplıyoruz.
 
     public boolean randomAttack() {
         double randNumber = Math.random() * 100;

@@ -31,6 +31,8 @@ public class Game {
             System.out.println("0- Çıkış yap --> Oyunu sonlandır.");
             System.out.println("Lütfen gitmek istediğiniz bölgeyi sseçiniz : ");
             int selectLoc = inp.nextInt();
+
+            // Burada envanterimizde eğer ödül varsa o mekana gitmeyi engelledik.
             switch (selectLoc) {
                 case 0:
                     location = null;
@@ -72,6 +74,7 @@ public class Game {
                     System.out.println("Lütfen geçerli bir bölge giriniz ! ");
             }
 
+            // envanterimizde 3 ödül de varsa oyunu kazanma koşulunu ekledik.
             if (player.getInventory().isWater() && player.getInventory().isFood() && player.getInventory().isFirewood()){
                 System.out.println("KAZANDINIZ. TÜM ÖZEL ÖDÜLLERİ TOPLADINIZ");
                 break;
