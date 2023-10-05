@@ -1,4 +1,6 @@
-package week4.Macera_Oyunu.src;
+package week4.Macera_Oyunu.src.location;
+
+import week4.Macera_Oyunu.src.Player;
 
 import java.util.Scanner;
 

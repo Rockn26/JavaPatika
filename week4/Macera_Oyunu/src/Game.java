@@ -1,7 +1,14 @@
 package week4.Macera_Oyunu.src;
 
+import week4.Macera_Oyunu.src.dungeon.Cave;
+import week4.Macera_Oyunu.src.dungeon.Forest;
+import week4.Macera_Oyunu.src.dungeon.Mine;
+import week4.Macera_Oyunu.src.dungeon.River;
+import week4.Macera_Oyunu.src.location.Location;
+import week4.Macera_Oyunu.src.location.SafeHouse;
+import week4.Macera_Oyunu.src.location.ToolStore;
+
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class Game {
 

@@ -1,6 +1,10 @@
 package week4.Macera_Oyunu.src;
 
+import week4.Macera_Oyunu.src.characters.Archer;
 import week4.Macera_Oyunu.src.characters.GameChar;
+import week4.Macera_Oyunu.src.characters.Knight;
+import week4.Macera_Oyunu.src.characters.Samurai;
+import week4.Macera_Oyunu.src.items.Weapon;
 
 import java.util.Scanner;
 

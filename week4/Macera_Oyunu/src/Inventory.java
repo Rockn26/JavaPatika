@@ -1,5 +1,8 @@
 package week4.Macera_Oyunu.src;
 
+import week4.Macera_Oyunu.src.items.Armor;
+import week4.Macera_Oyunu.src.items.Weapon;
+
 public class Inventory {
     private Weapon weapon;
     private Armor armor;

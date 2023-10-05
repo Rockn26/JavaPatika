@@ -1,4 +1,10 @@
-package week4.Macera_Oyunu.src;
+package week4.Macera_Oyunu.src.location;
+
+import week4.Macera_Oyunu.src.Player;
+import week4.Macera_Oyunu.src.items.Armor;
+import week4.Macera_Oyunu.src.items.Weapon;
+import week4.Macera_Oyunu.src.location.Location;
+import week4.Macera_Oyunu.src.location.NormalLoc;
 
 public class ToolStore extends NormalLoc {
 

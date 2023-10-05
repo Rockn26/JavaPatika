@@ -1,6 +1,6 @@
-package week4.Macera_Oyunu.src;
+package week4.Macera_Oyunu.src.obstacle;
 
-import week4.Macera_Oyunu.src.Obstacle;
+import week4.Macera_Oyunu.src.obstacle.Obstacle;
 
 public class Bear extends Obstacle {
 

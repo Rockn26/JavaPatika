@@ -1,6 +1,10 @@
-package week4.Macera_Oyunu.src;
+package week4.Macera_Oyunu.src.location;
 
-import java.util.Objects;
+import week4.Macera_Oyunu.src.items.Armor;
+import week4.Macera_Oyunu.src.Player;
+import week4.Macera_Oyunu.src.items.Weapon;
+import week4.Macera_Oyunu.src.obstacle.Obstacle;
+
 import java.util.Random;
 
 public abstract class BattleLoc extends Location {

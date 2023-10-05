@@ -1,4 +1,4 @@
-package week4.Macera_Oyunu.src;
+package week4.Macera_Oyunu.src.items;
 
 public class Armor {
     private int id;

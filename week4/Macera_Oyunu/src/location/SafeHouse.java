@@ -1,6 +1,9 @@
-package week4.Macera_Oyunu.src;
+package week4.Macera_Oyunu.src.location;
 
-public class SafeHouse extends NormalLoc{
+import week4.Macera_Oyunu.src.Player;
+import week4.Macera_Oyunu.src.location.NormalLoc;
+
+public class SafeHouse extends NormalLoc {
 
     public SafeHouse(Player player) {
         super(player, "Güvenli Ev");
