@@ -1,4 +1,4 @@
-package week4.Macera_Oyunu.src;
+package week4.Macera_Oyunu.src.characters;
 
 public abstract class GameChar {
     private int id;

@@ -5,7 +5,7 @@ import java.util.SortedMap;
 
 public class Game {
 
-    private Scanner inp = new Scanner(System.in);
+    private final Scanner inp = new Scanner(System.in);
 
     public void start() {
         System.out.println("Macera oyununa hoşgeldiniz!");
@@ -24,9 +24,10 @@ public class Game {
             System.out.println();
             System.out.println("1- Güvenli Ev ---> Burası sizin için güvenli bir ev, düşman yoktur!");
             System.out.println("2- Eşya Dükkanı --> Silah veya Zırh satın alabilirsiniz ! ");
-            System.out.println("3- Mağara --> Ödül <YEMEK>, dikkatli ol canavar çıkabilir!");
-            System.out.println("4- Orman --> Ödül <ODUN>, dikkatli burası mağaradan daha tehlikeli");
-            System.out.println("5- Nehir --> Ödül <Su>, dikkatli ol burası son seviye ! Ayı çıkabilir.");
+            System.out.println("3- Mağara --> Ödül <Food>, dikkatli ol canavar çıkabilir!");
+            System.out.println("4- Orman --> Ödül <Firewood>, dikkatli burası mağaradan daha tehlikeli");
+            System.out.println("5- Nehir --> Ödül <Water>, dikkatli ol burası son seviye ! Ayı çıkabilir.");
+            System.out.println("6- Maden --> Ödül <Suprise>, dikkatli ol burası yılanlarla çevrili!");
             System.out.println("0- Çıkış yap --> Oyunu sonlandır.");
             System.out.println("Lütfen gitmek istediğiniz bölgeyi sseçiniz : ");
             int selectLoc = inp.nextInt();
@@ -41,16 +42,39 @@ public class Game {
                     location = new ToolStore(player);
                     break;
                 case 3:
-                    location = new Cave(player);
+                    if (!player.getInventory().isFood()) {
+                        System.out.println("Mağaraya giriş yaptınız!");;
+                        location = new Cave(player);
+                    }else {
+                        System.out.println("Ödülü aldın, buraya giremezsin!");
+                    }
                     break;
                 case 4:
-                    location = new Forest(player);
+                    if (!player.getInventory().isFirewood()){
+                        System.out.println("Ormana giriş yaptınız!");
+                        location = new Forest(player);
+                    }else {
+                        System.out.println("Ödülü aldın, buraya giremezsin!");
+                    }
                     break;
                 case 5:
-                    location = new River(player);
+                    if (!player.getInventory().isWater()){
+                        System.out.println("Göle giriş yaptınız!");
+                        location = new River(player);
+                    }else {
+                        System.out.println("Ödülü aldın, buraya giremezsin!");
+                    }
+                    break;
+                case 6:
+                    location = new Mine(player);
                     break;
                 default:
                     System.out.println("Lütfen geçerli bir bölge giriniz ! ");
+            }
+
+            if (player.getInventory().isWater() && player.getInventory().isFood() && player.getInventory().isFirewood()){
+                System.out.println("KAZANDINIZ. TÜM ÖZEL ÖDÜLLERİ TOPLADINIZ");
+                break;
             }
 
             if (location == null){

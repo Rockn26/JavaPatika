@@ -1,5 +1,7 @@
 package week4.Macera_Oyunu.src;
 
+import week4.Macera_Oyunu.src.characters.GameChar;
+
 public class Archer extends GameChar {
 
     public Archer() {
