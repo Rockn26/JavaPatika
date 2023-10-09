@@ -2,9 +2,13 @@ package week5.Try_Catch.src;
 
 import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
+
+    public static int Array(int[] arr , int index){
+        return arr[index];
+    }
+
     public static void main(String[] args) {
 
         // 10 elemanlı dizimiz
@@ -17,7 +21,7 @@ public class Main {
 
 
         try {
-            int secilen = arr[num];
+            int secilen = Array(arr,num);
             System.out.println("Seçilen indeksteki eleman : " + secilen);
         } catch (ArrayIndexOutOfBoundsException a) {
             // burada hatayı yakaladık ve hem kendimiz mesaj yazdık hem sınıfın mesajını yazdırdık.

@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3a9ee6d-deb3-4690-af59-bbd5a8438711" name="Changes" comment="">
+    <list default="true" id="44e48775-c0e4-40fc-9bb6-74b5e8b2dc90" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch_Odev.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +23,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
+  "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2WWuVUH3QVxdOr8KphbaJMLijCG" />
+  <component name="ProjectId" id="2WWzfKoEPupUnFwIUhtDUs3dkpV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,17 +36,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "/Users/irfananik/Documents/GitHub/JavaPatika/week4/Try_Catch_Odev/src/Main.java"
+    "onboarding.tips.debug.path": "/Users/irfananik/Documents/GitHub/JavaPatika/week5/Try_Catch/untitled/src/Main.java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e3a9ee6d-deb3-4690-af59-bbd5a8438711" name="Changes" comment="" />
-      <created>1696860681913</created>
+      <changelist id="44e48775-c0e4-40fc-9bb6-74b5e8b2dc90" name="Changes" comment="" />
+      <created>1696863226410</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696860681913</updated>
+      <updated>1696863226410</updated>
     </task>
     <servers />
   </component>
