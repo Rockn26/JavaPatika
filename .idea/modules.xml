@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/week4/Interface_Ornek/..iml" filepath="$PROJECT_DIR$/week4/Interface_Ornek/..iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaPatika.iml" filepath="$PROJECT_DIR$/.idea/JavaPatika.iml" />
     </modules>
   </component>
