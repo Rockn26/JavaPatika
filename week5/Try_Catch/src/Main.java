@@ -20,6 +20,7 @@ public class Main {
             int secilen = arr[num];
             System.out.println("Seçilen indeksteki eleman : " + secilen);
         } catch (ArrayIndexOutOfBoundsException a) {
+            // burada hatayı yakaladık ve hem kendimiz mesaj yazdık hem sınıfın mesajını yazdırdık.
             System.out.println("BİR HATA YAKALANDI. DİZİNİN BOYU AŞILDI.");
             System.out.println(a.getMessage());
         } finally {
