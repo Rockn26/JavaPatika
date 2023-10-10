@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Main {
 
     public static int Array(int[] arr , int index){
+        if (index < 0 || index >= arr.length)
+            throw new ArrayIndexOutOfBoundsException("İndeksin dışında olamaz!");
         return arr[index];
     }
 
