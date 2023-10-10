@@ -9,10 +9,7 @@ public class Main {
         System.out.print("Metin giriniz : ");
         String sentence = inp.nextLine();
 
-        // Metinimizi .split kullanıp " " kelime kelime ayırdık.
         String[] words = sentence.split(" ");
-
-
         HashMap<String, Integer> hmap = new HashMap<>();
 
         // for each ile cümleyi kelimelere ayırdık.
@@ -29,11 +26,11 @@ public class Main {
         String target = "";
 
         // burada for each ile en çok tekrar eden kelimeyi ve bunun tekrar sayısını bulduk.
-        for (String kelime : hmap.keySet()){
-            int count = hmap.get(kelime);
+        for (String word : hmap.keySet()){
+            int count = hmap.get(word);
             if (count > maxCount){
                 maxCount = count;
-                target = kelime;
+                target = word;
             }
         }
         System.out.println("En çok tekrar eden kelime : " + target +
