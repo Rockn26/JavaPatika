@@ -1,10 +1,5 @@
-package week5.week5.Kitap_Siralayici.src;
+package week5.Kitap_Siralayici.src;
 
-import com.sun.source.tree.Tree;
-
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class Main {

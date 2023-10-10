@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b2c155a-fd04-49b0-b57b-26fba2d1086b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Try_Catch/untitled/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/src/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/src/OrderNumberComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week5/Kitap_Siralayici/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/JavaPatika/week5/Try_Catch/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/JavaPatika/week5/Try_Catch/src/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Try_Catch/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Try_Catch/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,22 +24,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2WX0GezoXzMrxpkRL47FjXMIe1g" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/irfananik/Documents/GitHub/JavaPatika/week5"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/irfananik/Documents/GitHub/JavaPatika/week5&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
