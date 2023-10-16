@@ -10,38 +10,24 @@ public class Main {
                 file.createNewFile();
             }
 
-            String val = "5";
-            int number = Integer.parseInt(val);
-            String val1 = "10";
-            int number1 = Integer.parseInt(val1);
-            String val2 = "20";
-            int number2 = Integer.parseInt(val2);
-            String val3 = "12";
-            int number3 = Integer.parseInt(val3);
-            String val4 = "33";
-            int number4 = Integer.parseInt(val4);
 
-            /*
             FileWriter fileWriter = new FileWriter(file, false);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-            bufferedWriter.write(val);
+            bufferedWriter.write(String.valueOf(5));
             bufferedWriter.newLine();
-            bufferedWriter.write(val1);
+            bufferedWriter.write(String.valueOf(10));
             bufferedWriter.newLine();
-            bufferedWriter.write(val2);
+            bufferedWriter.write(String.valueOf(20));
             bufferedWriter.newLine();
-            bufferedWriter.write(val3);
+            bufferedWriter.write(String.valueOf(12));
             bufferedWriter.newLine();
-            bufferedWriter.write(val4);
+            bufferedWriter.write(String.valueOf(33));
             bufferedWriter.newLine();
-
-
 
             bufferedWriter.close();
             fileWriter.close();
 
-             */
 
             FileReader fileReader = new FileReader(file);
 
